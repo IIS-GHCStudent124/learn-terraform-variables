@@ -128,3 +128,9 @@ module "ec2_instances" {
     environment = "prod"
   }
 }
+
+module "s3_bucket" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-karthik/aws"
+  version = "1.0.0"
+  bucket_name = "karthik05062026_uniquenesshere"
+}
